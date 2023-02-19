@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cryptic Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Cryptic Calculator</h1>
+      <p class="text-center">A simple PHP calculator with no easter eggs at all.</p>
+      <a href="https://cryptic.ga/">
+          <center>
+            <button class="btn btn-warning btn-shine mb-4 center">More things Cryptic</button>
+          </center>
+      </a>
+      <form method="post" action="calculator.php">
+        <div class="form-group">
+          <label for="num1">Enter number 1:</label>
+          <input type="number" class="form-control" id="num1" name="num1" required>
+        </div>
+        <div class="form-group">
+          <label for="num2">Enter number 2:</label>
+          <input type="number" class="form-control" id="num2" name="num2" required>
+        </div>
+        <div class="form-group">
+          <label for="operation">Select operation:</label>
+          <select class="form-control" id="operation" name="operation" required>
+            <option value="">Select an operation</option>
+            <option value="add">Addition</option>
+            <option value="subtract">Subtraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+          </select>
+        </div>
+        <button type="post" action="calculator.php" class="btn btn-primary">Calculate</button>
+        
+      </form>
+    </div>
+  </body>
+</html>
